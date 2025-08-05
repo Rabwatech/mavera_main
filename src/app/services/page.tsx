@@ -1,7 +1,9 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import { Crown, Utensils, Camera, Music, Flower, Sparkles, Users, Heart, Star } from 'lucide-react'
+import { Crown, Utensils, Camera, Music, Flower, Sparkles, Users, Heart, Star, Quote, ArrowRight } from 'lucide-react'
+import FullServiceJourney from '../../components/FullServiceJourney'
+
 
 export default function ServicesPage() {
   const [isVisible, setIsVisible] = useState(false)
@@ -61,6 +63,16 @@ export default function ServicesPage() {
     }
   ]
 
+
+
+  const testimonial = {
+    name: 'سارة أحمد',
+    event: 'حفل زفاف فاخر',
+    text: 'فريق مافيرا تجاوز كل توقعاتنا! من التخطيط الأولي حتى نهاية الحفل، كل شيء كان مثالياً. الخدمة شاملة والفريق محترف جداً. أنصح بهم بشدة لأي شخص يريد حفلاً لا يُنسى.',
+    image: 'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800',
+    rating: 5
+  }
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -80,6 +92,14 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen">
+      {/* SEO Meta Section - Hidden for SEO */}
+      <div className="sr-only">
+        <h1>خدمات حفلات فاخرة في جدة - مافيرا</h1>
+        <p>خدمات شاملة لحفلات الزفاف والمناسبات الفاخرة في جدة. تخطيط، تصميم، واستضافة باحترافية عالية مع فريق متخصص</p>
+        <meta name="description" content="خدمات حفلات فاخرة في جدة - مافيرا، خدمات شاملة لحفلات الزفاف والمناسبات مع تخطيط احترافي وتصميم مخصص واستضافة فاخرة" />
+        <meta name="keywords" content="خدمات حفلات جدة, تنظيم حفلات زفاف جدة, خدمات ضيافة فاخرة جدة, تصوير حفلات جدة" />
+      </div>
+
       {/* Hero Section - Cinematic Opening */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -105,9 +125,84 @@ export default function ServicesPage() {
           </h1>
           
           <p className="text-2xl md:text-3xl font-light tracking-[0.05em] leading-relaxed max-w-3xl mx-auto opacity-90">
-            نقدم لكم مجموعة شاملة من الخدمات الفاخرة
-            <span className="block mt-2 text-xl opacity-70">لتحقيق أحلامكم بأسلوب لا يُضاهى</span>
+            نخطط، نصمم، نستضيف
+            <span className="block mt-2 text-xl opacity-70">خدمات شاملة لتحقيق أحلامكم بأسلوب لا يُضاهى</span>
           </p>
+        </div>
+      </section>
+
+      {/* Interactive Full-Service Journey */}
+      <FullServiceJourney />
+
+      {/* Social Proof Section - New Addition */}
+      <section className="py-32 bg-gradient-to-b from-[#FAF9F7] to-[#F8F6F2] relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-[#C49D2F]/3 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#C49D2F]/2 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-8 lg:px-12 relative z-10">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-8">
+              <div className="w-16 h-px bg-gradient-to-r from-transparent to-[#C49D2F]/40"></div>
+              <Quote className="w-6 h-6 text-[#C49D2F] mx-6" />
+              <div className="w-16 h-px bg-gradient-to-l from-transparent to-[#C49D2F]/40"></div>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-extralight text-[#2D2926] mb-8 tracking-[0.05em]">
+              آراء عملائنا
+            </h2>
+            
+            <p className="text-xl text-[#766B5A] font-light max-w-2xl mx-auto">
+              اكتشف ما يقوله عملاؤنا عن تجربتهم مع خدماتنا
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Testimonial Content */}
+            <div className="space-y-8">
+              <div className="flex items-center mb-6">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-6 h-6 text-[#C49D2F] fill-current" />
+                ))}
+              </div>
+              
+              <blockquote className="text-2xl md:text-3xl font-light text-[#2D2926] leading-relaxed italic">
+                "{testimonial.text}"
+              </blockquote>
+              
+              <div className="space-y-2">
+                <h4 className="text-xl font-medium text-[#2D2926]">{testimonial.name}</h4>
+                <p className="text-[#C49D2F] font-medium">{testimonial.event}</p>
+              </div>
+              
+              <div className="pt-8">
+                <button className="group relative px-8 py-4 border-2 border-[#C49D2F] text-[#C49D2F] rounded-full text-lg font-medium transition-all duration-700 hover:bg-[#C49D2F] hover:text-white hover:shadow-[0_16px_64px_rgba(196,157,47,0.25)] overflow-hidden">
+                  <span className="relative z-10 flex items-center space-x-3">
+                    <span>اقرأ المزيد من الآراء</span>
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </span>
+                </button>
+              </div>
+            </div>
+            
+            {/* Testimonial Image */}
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(0,0,0,0.12)]">
+                <img
+                  src={testimonial.image}
+                  alt={`${testimonial.name} - ${testimonial.event}`}
+                  className="w-full h-96 object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                
+                {/* Quote Icon Overlay */}
+                <div className="absolute top-8 right-8 w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
+                  <Quote className="w-8 h-8 text-[#C49D2F]" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -251,7 +346,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section - Emotional Finale */}
+      {/* Unified CTA Section - Updated */}
       <section className="py-32 bg-[#FAF9F7]">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <div className="mb-8">
@@ -259,7 +354,7 @@ export default function ServicesPage() {
           </div>
           
           <h2 className="text-5xl md:text-6xl font-extralight text-[#2D2926] mb-12 tracking-[0.05em]">
-            احجز خدمتك الخاصة
+            احجز استشارة مجانية
           </h2>
           
           <p className="text-xl text-[#766B5A] mb-16 leading-relaxed font-light max-w-2xl mx-auto">
@@ -268,7 +363,10 @@ export default function ServicesPage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="group relative px-12 py-5 bg-[#C49D2F] text-white rounded-full text-xl font-medium tracking-[0.05em] transition-all duration-700 hover:shadow-[0_16px_64px_rgba(196,157,47,0.25)] hover:scale-105 overflow-hidden">
-              <span className="relative z-10">احجز الآن</span>
+              <span className="relative z-10 flex items-center space-x-3">
+                <span>احجز استشارة مجانية</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
               
               {/* Shimmer Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200"></div>
@@ -278,7 +376,10 @@ export default function ServicesPage() {
             </button>
             
             <button className="group relative px-12 py-5 border-2 border-[#C49D2F] text-[#C49D2F] rounded-full text-xl font-medium tracking-[0.05em] transition-all duration-700 hover:bg-[#C49D2F] hover:text-white hover:scale-105 overflow-hidden">
-              <span className="relative z-10">استشارة مجانية</span>
+              <span className="relative z-10 flex items-center space-x-3">
+                <span>اطلب معلومات إضافية</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
               
               {/* Hover Background */}
               <div className="absolute inset-0 bg-[#C49D2F] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

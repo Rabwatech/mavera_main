@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { ChevronLeft, ChevronRight, Filter, Play, Pause } from 'lucide-react'
 
+
 export default function GalleryPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [activeFilter, setActiveFilter] = useState('all')

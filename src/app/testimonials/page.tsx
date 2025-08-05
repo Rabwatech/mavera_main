@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Star, Quote, Crown, ChevronLeft, ChevronRight, Heart } from 'lucide-react'
 
+
 export default function TestimonialsPage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [isVisible, setIsVisible] = useState(false)

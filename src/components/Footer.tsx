@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#FAF9F7] border-t border-[#E7DFD2]/50 py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Logo and Description */}
           <div className="text-center md:text-right">
             <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
@@ -48,8 +48,30 @@ const Footer = () => {
             </div>
           </div>
           
+          {/* Legal Pages */}
+          <div className="text-center">
+            <h4 className="text-xl font-bold text-[#2D2926] mb-6" style={{ fontFamily: 'serif' }}>
+              الصفحات القانونية
+            </h4>
+            <div className="space-y-3">
+              {[
+                { id: 'privacy', label: 'سياسة الخصوصية', href: '/privacy' },
+                { id: 'terms', label: 'الشروط والأحكام', href: '/terms' }
+              ].map((item) => (
+                <Link
+                  key={item.id}
+                  href={item.href}
+                  className="block w-full text-[#766B5A] hover:text-[#C49D2F] transition-colors duration-300 text-lg"
+                  style={{ fontFamily: 'serif' }}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          
           {/* Contact Info */}
-          <div className="text-center md:text-left">
+          <div className="text-center">
             <h4 className="text-xl font-bold text-[#2D2926] mb-6" style={{ fontFamily: 'serif' }}>
               تواصل معنا
             </h4>
