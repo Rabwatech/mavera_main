@@ -1,27 +1,107 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-91e22ac4a3255c47.js",
+      "static/chunks/webpack-2481e5fdaa078119.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-0608b4314356e248.js",
-      "static/chunks/main-app-05f7059cc3eb767f.js",
-      "static/chunks/app/_not-found/page-8be60e64bb182f65.js"
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/_not-found/page-7af1b2fa813a8fcd.js"
     ],
     "/layout": [
-      "static/chunks/webpack-91e22ac4a3255c47.js",
+      "static/chunks/webpack-2481e5fdaa078119.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-0608b4314356e248.js",
-      "static/chunks/main-app-05f7059cc3eb767f.js",
-      "static/css/1848cbfe71902b1b.css",
-      "static/chunks/app/layout-1c3ba40e892f352c.js"
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/css/ad0163c8c62aca3b.css",
+      "static/chunks/644-126458559ce0bda6.js",
+      "static/chunks/app/layout-e8092175c1ec9d08.js"
+    ],
+    "/halls/flower-hall/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/halls/flower-hall/page-b0acd383f5fc4ee7.js"
+    ],
+    "/booking/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/889-c0c807eecb66168e.js",
+      "static/chunks/app/booking/page-d5ffd438a5a75c7b.js"
+    ],
+    "/halls/grand-ballroom/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/halls/grand-ballroom/page-615c7cc1f3337d84.js"
+    ],
+    "/gallery/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/gallery/page-80170492a5007ac2.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/644-126458559ce0bda6.js",
+      "static/chunks/app/about/page-af329581cbe91116.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/privacy/page-ac8c82d1d9e02111.js"
+    ],
+    "/halls/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/644-126458559ce0bda6.js",
+      "static/chunks/app/halls/page-068bbfe06f8cfa8d.js"
+    ],
+    "/halls/golden-hall/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/halls/golden-hall/page-912d78b14b1dfbe1.js"
     ],
     "/page": [
-      "static/chunks/webpack-91e22ac4a3255c47.js",
+      "static/chunks/webpack-2481e5fdaa078119.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-0608b4314356e248.js",
-      "static/chunks/main-app-05f7059cc3eb767f.js",
-      "static/chunks/442-df3ff52c93a79181.js",
-      "static/chunks/app/page-eb39a242c5281a19.js"
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/page-89711ec5967aec2e.js"
+    ],
+    "/services/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/services/page-b934690e8ee86e57.js"
+    ],
+    "/terms/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/terms/page-45f77b6eff15aa7e.js"
+    ],
+    "/testimonials/page": [
+      "static/chunks/webpack-2481e5fdaa078119.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-0608b4314356e248.js",
+      "static/chunks/main-app-9693fcc4602b982b.js",
+      "static/chunks/app/testimonials/page-b04cc4137e3b1a81.js"
     ]
   }
 }

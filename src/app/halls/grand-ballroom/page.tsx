@@ -382,7 +382,6 @@ export default function GrandBallroomPage() {
 
       {/* 3D Model Section */}
       <ThreeDModel
-        modelPath="/test/hall-test.glb"
         title="النموذج ثلاثي الأبعاد"
         description="استكشف القاعة الكبرى من جميع الزوايا من خلال النموذج التفاعلي ثلاثي الأبعاد"
       />

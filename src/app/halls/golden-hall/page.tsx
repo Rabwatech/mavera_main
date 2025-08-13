@@ -382,7 +382,6 @@ export default function GoldenHallPage() {
 
       {/* 3D Model Section */}
       <ThreeDModel
-        modelPath="/test/hall-test.glb"
         title="النموذج ثلاثي الأبعاد"
         description="استكشف قاعة الذهبية من جميع الزوايا من خلال النموذج التفاعلي ثلاثي الأبعاد"
       />
