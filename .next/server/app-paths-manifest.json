@@ -1,4 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/about/page": "app/about/page.js",
+  "/halls/flower-hall/page": "app/halls/flower-hall/page.js",
+  "/booking/page": "app/booking/page.js",
+  "/halls/grand-ballroom/page": "app/halls/grand-ballroom/page.js",
+  "/halls/golden-hall/page": "app/halls/golden-hall/page.js",
+  "/halls/page": "app/halls/page.js",
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
+  "/terms/page": "app/terms/page.js",
+  "/services/page": "app/services/page.js",
+  "/gallery/page": "app/gallery/page.js"
 }

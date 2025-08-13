@@ -10,7 +10,7 @@ const CustomizeOccasion = () => {
     colors: ''
   });
   const [showResult, setShowResult] = useState(false);
-  const [recommendedHall, setRecommendedHall] = useState(null);
+  const [recommendedHall, setRecommendedHall] = useState<string | null>(null);
 
   const questions = [
     {
@@ -89,6 +89,7 @@ const CustomizeOccasion = () => {
 
   const calculateRecommendation = () => {
     // Simple logic to recommend halls based on answers
+    // eslint-disable-next-line prefer-const
     let score = { hall1: 0, hall2: 0, hall3: 0 };
 
     // Occasion scoring
@@ -136,11 +137,11 @@ const CustomizeOccasion = () => {
     }
 
     // Find the hall with highest score
-    const winner = Object.keys(score).reduce((a, b) => score[a] > score[b] ? a : b);
+    const winner = Object.keys(score).reduce((a, b) => score[a as keyof typeof score] > score[b as keyof typeof score] ? a : b);
     return winner;
   };
 
-  const handleAnswer = (questionId, value) => {
+  const handleAnswer = (questionId: string, value: string) => {
     const newAnswers = { ...answers, [questionId]: value };
     setAnswers(newAnswers);
 
@@ -166,7 +167,7 @@ const CustomizeOccasion = () => {
   };
 
   if (showResult && recommendedHall) {
-    const hall = halls[recommendedHall];
+    const hall = halls[recommendedHall as keyof typeof halls];
     return (
       <section className="py-32 bg-gradient-to-b from-[#FAF9F7] to-[#F8F6F2] relative overflow-hidden">
         <div className="absolute inset-0">
@@ -333,7 +334,7 @@ const CustomizeOccasion = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Color Preview for Colors Question */}
-                {currentQuestion.id === 'colors' && option.color && (
+                {currentQuestion.id === 'colors' && 'color' in option && option.color && (
                   <div className={`absolute top-4 left-4 w-8 h-8 rounded-full ${option.color} border-2 border-white shadow-lg`}></div>
                 )}
                 

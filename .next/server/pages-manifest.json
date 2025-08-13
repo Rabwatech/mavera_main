@@ -1,11 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/GalleryPage": "pages/GalleryPage.js",
-  "/AboutPage": "pages/AboutPage.js",
-  "/BookingPage": "pages/BookingPage.js",
-  "/HomePage": "pages/HomePage.js",
-  "/ServicesPage": "pages/ServicesPage.js",
-  "/TestimonialsPage": "pages/TestimonialsPage.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }

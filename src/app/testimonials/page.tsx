@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { Star, Quote, Crown, ChevronLeft, ChevronRight, Heart } from 'lucide-react'
 
 
@@ -71,9 +71,9 @@ export default function TestimonialsPage() {
     return () => observer.disconnect()
   }, [])
 
-  const nextTestimonial = () => {
+  const nextTestimonial = useCallback(() => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-  }
+  }, [testimonials.length])
 
   const prevTestimonial = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)
@@ -83,7 +83,7 @@ export default function TestimonialsPage() {
   useEffect(() => {
     const interval = setInterval(nextTestimonial, 6000)
     return () => clearInterval(interval)
-  }, [])
+  }, [nextTestimonial])
 
   return (
     <div className="min-h-screen">
